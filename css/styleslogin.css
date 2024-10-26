@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+body {
+    background-image: url('https://24.media.tumblr.com/tumblr_mbzsggBFkk1r11qslo1_500.gif');
+    background-position: center; /* Centra la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-repeat: no-repeat; /* Evita que se repita */
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto del body */
+}
+
+.banner {
+    height: 25vh; /* Ajusta la altura */
+    width: 100%; /* Ancho completo */
+    margin: 0 auto; /* Centra el div en la página */
+    display: flex; /* Usamos flexbox para centrar el contenido */
+    justify-content: space-between; /* Separa los elementos a lo largo del eje horizontal */
+    align-items: center; /* Centra verticalmente */
+    padding: 0 20px; /* Añade un poco de espacio a los lados */
+    position: relative; /* Permite que los hijos sobresalgan */
+    overflow: visible; /* Oculta el desbordamiento */
+}
+
+.banner img {
+    max-width: 15%; /* Tamaño general para los shuriken */
+    height: auto; /* Mantiene la proporción de la imagen */
+    transition: transform 0.3s ease; /* Suaviza la transformación */
+}
+
+#narutologo {
+    max-width: 28%; /* Tamaño más grande para la imagen del centro */
+    height: auto;
+    position: relative; /* Permite que se posicione con respecto al contenedor */
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+}
+
+#shurikenIzq, #shurikenDer {
+    max-width: 500vh; /* Tamaño específico para shuriken */
+}
+
+#shurikenDer:hover {
+    transform: scale(1.1) rotate(2deg); /* Aumenta el tamaño y rota ligeramente */
+}
+
+#shurikenIzq:hover {
+    transform: scale(1.1) rotate(-2deg); /* Aumenta el tamaño y rota ligeramente */
+}
+
+.banner img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+}
